@@ -33,7 +33,8 @@
     color:white;
     background-color: #455A64;
   }
-  .how-it-works {
+  .how-it-works .title {
+    margin-bottom: 10vh;
   }
   .value-prop {
     color:white;
@@ -42,19 +43,40 @@
   .contact-us {
 
   }
-  .panel {
+  .blockarrow:after {
+    color: #455A64;
+    border-left: 0.75vw solid;
+    border-top: 1.75vw solid transparent;
+    border-bottom: 1.75vw solid transparent;
     display: inline-block;
-    width: 27%;
+    content: '';
+    position: absolute;
+    right: -0.75vw;
+    top: 0;
+  }
+  .blockarrow {
+    background-color: #455A64;
+    width: 5vw;
+    height: 3.5vw;
+    display: inline-block;
+    position: relative;
   }
   .arrow {
     display: inline-block;
-    width: 5%;
+    width: 5vw;
+    margin-right: .5vw;
+    margin-top: 20vh;
+  }
+  .arrowtext {
+    color: #F4F4F4; 
+    position: relative;
+    top: .8vh;
   }
   .copyright {
     position: fixed;
     color: #000;
     bottom: 5px;
-    right: 5px;
+    right: 15px;
     opacity: 60%;
   }
   .tab.landing .subtitle {
@@ -73,6 +95,29 @@
   }
   .overview ul li {
     margin-top: 11vh;
+  }
+  .panel {
+    display: inline-block;
+    width: 27vw;
+    border: 1px solid #455A64;
+    border-radius: 10px;
+    min-height: 40vh;
+    vertical-align: top;
+    padding: 30px 0px;
+  }
+  .midpanel {
+    width: 30vw;
+    min-height: 45vh;
+  }
+  .panel_img {
+    height: 25vh;
+  }
+  .panel ul {
+    margin-top: 30px;
+  }
+  .paneltitle {
+    font-size: 24px;
+    margin-bottom: 20px;
   }
 </style>
 <!-- BODY --> 
@@ -98,18 +143,20 @@
     <div class="content">
 
       <div class="panel">
-        <img src="" class="" >
+        <div class="paneltitle">Scan</div>
+        <img src="img1.png" class="panel_img" >
         <ul>
           <li>Using Industry Leading Scanners</li>
           <li>Same process already in use today</li>
           <li>Create .STL file</li>
         </ul>
       </div>
-      <div class="arrow">
-        Upload .STL File
+      <div class="arrow blockarrow">
+        <span class="arrowtext">Upload .STL File</span>
       </div>
-      <div class="panel">
-        <img src="" class="" >
+      <div class="panel midpanel">
+        <div class="paneltitle">Cadicus <br>Input Interface</div>
+        <img src="img2.png" class="panel_img" >
         <ul>
           <li>Easy to use, Cloud based via Browser - no install</li>
           <li>Algorithms Designed by Prosthetists for Prosthetists!</li>
@@ -117,11 +164,12 @@
           <li>Cost effective - Pay per socket - No upfront investments</li>
         </ul>
       </div>
-      <div class="arrow">
-        Send to printer
+      <div class="arrow blockarrow">
+        <span class="arrowtext">Send to printer</span>
       </div>
       <div class="panel">
-        <img src="" class="" >
+        <div class="paneltitle">3D Print</div>
+        <img src="img3.png" class="panel_img" >
         <ul>
           <li>Cost effective 3D printers</li>
           <li>Make in your clinic</li>
