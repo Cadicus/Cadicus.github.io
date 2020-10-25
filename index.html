@@ -71,6 +71,7 @@
     color: #F4F4F4; 
     position: relative;
     top: .8vh;
+    font-size: 15px;
   }
   .copyright {
     position: fixed;
@@ -84,7 +85,7 @@
     font-size: 25px;
   }
   .title {
-    padding-top: 20px;
+    padding-top: 30px;
     font-size: 45px;
   }
   .overview ul {
@@ -109,15 +110,25 @@
     width: 30vw;
     min-height: 45vh;
   }
+  .sidepanel {
+    margin-top: 3vh;
+  }
   .panel_img {
     height: 25vh;
   }
   .panel ul {
     margin-top: 30px;
+    text-align: left;
   }
   .paneltitle {
     font-size: 24px;
     margin-bottom: 20px;
+  }
+  .how-it-works ul li {
+    margin-top: 1vh;
+  }
+  .cadicus-span {
+    font-size: 28px;
   }
 </style>
 <!-- BODY --> 
@@ -142,38 +153,38 @@
     <div class="title">How it works</div>
     <div class="content">
 
-      <div class="panel">
-        <div class="paneltitle">Scan</div>
+      <div class="panel sidepanel">
+        <div class="paneltitle">3D Scan</div>
         <img src="img1.png" class="panel_img" >
         <ul>
-          <li>Using Industry Leading Scanners</li>
-          <li>Same process already in use today</li>
-          <li>Create .STL file</li>
+          <li>Using Industry Standard Scanners</li>
+          <li>Same process as scanning for fabricator</li>
+          <li>Create and Export .STL file</li>
         </ul>
       </div>
       <div class="arrow blockarrow">
         <span class="arrowtext">Upload .STL File</span>
       </div>
       <div class="panel midpanel">
-        <div class="paneltitle">Cadicus <br>Input Interface</div>
+        <div class="paneltitle"><span class="cadicus-span">Cadicus</span> <br>Input Interface</div>
         <img src="img2.png" class="panel_img" >
         <ul>
-          <li>Easy to use, Cloud based via Browser - no install</li>
-          <li>Algorithms Designed by Prosthetists for Prosthetists!</li>
+          <li>Cloud based Browser Interface - Nothing to Install</li>
+          <li>Algorithms by Prosthetists for Prosthetists</li>
           <li>No special CAD software skills needed</li>
-          <li>Cost effective - Pay per socket - No upfront investments</li>
+          <li>Pay per socket - No upfront investments</li>
         </ul>
       </div>
       <div class="arrow blockarrow">
         <span class="arrowtext">Send to printer</span>
       </div>
-      <div class="panel">
+      <div class="panel sidepanel">
         <div class="paneltitle">3D Print</div>
         <img src="img3.png" class="panel_img" >
         <ul>
           <li>Cost effective 3D printers</li>
-          <li>Make in your clinic</li>
-          <li>Upload to Central Fabricator</li>
+          <li>Manufacture in your office</li>
+          <li>or Upload to central fabricator</li>
         </ul>
       </div>
 
