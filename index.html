@@ -26,7 +26,7 @@
     bottom: 10px;
     font-weight: 600;
     font-size: 16px;
-    height: 720px;
+    height: 97.5vh;
     display: block;
   }
   .overview {
@@ -50,12 +50,23 @@
     display: inline-block;
     width: 5%;
   }
+  .copyright {
+    position: fixed;
+    color: #000;
+    bottom: 5px;
+    right: 5px;
+    opacity: 60%;
+  }
+  .tab.landing .subtitle {
+    margin-top: 50px;
+    font-size: 25px;
+  }
 </style>
 <!-- BODY --> 
 <body>
-  <div class="tab">
+  <div class="tab landing">
     <img src="work.png">
-    <div>&copy; 2018-2020 CADICUS CORP.</div>
+    <div class="subtitle">Automated CAD design for 3D printing prosthetic sockets</div>
   </div>
 
   <div class="tab overview">
@@ -127,9 +138,9 @@
     </div>
     <div class="cost-comparison">
       <ul>
-        <li>Current "Plaster Mold Process" – ALL Manual<li>
-        <li>Current "Automated Milling" Process – 3D scan/CAD/Mill/Wrap/Finish<li>
-        <li>Cadicus Process – 3D scan/CAD/Print/Finish<li>
+        <li>Current "Plaster Mold Process" - ALL Manual<li>
+        <li>Current "Automated Milling" Process - 3D scan/CAD/Mill/Wrap/Finish<li>
+        <li>Cadicus Process - 3D Scan/CAD/Print/Finish<li>
       </ul>
     </div>
   </div>
@@ -138,6 +149,8 @@
     <div class="title">Contact Us</div>
     <div class="contact-info">contact@cadicus.com</div>
   </div>
+
+  <div class="copyright">&copy; 2020 CADICUS CORP.</div>
 
 </body>
 <!-- /BODY --> 
