@@ -26,7 +26,7 @@
     bottom: 10px;
     font-weight: 600;
     font-size: 16px;
-    height: 95vh;
+    min-height: 95vh;
     display: block;
   }
   .overview {
@@ -130,6 +130,54 @@
   .cadicus-span {
     font-size: 28px;
   }
+  .cost-comparison {
+    margin-top: 40px;
+  }
+  .cost-comparison img {
+    width: 60vw;
+  }
+  .value-prop .title {
+    margin-bottom: 5vh;
+  }
+  .value-prop .content {
+    width: 50vw;
+    margin: auto;
+    text-align: left;
+    padding-left: 7.5vw;
+  }
+  .value-prop ol li {
+    font-size: 3vh;
+    font-weight: 300;
+    margin-bottom: 21px;
+    color: #AED581;
+    opacity: 85%;
+  }
+  .vps {
+    color: #fff;
+    opacity: 1;
+  }
+  .low-title {
+    font-size: 30px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  .cost-comparison .low-title {
+    padding-top: 2vh;
+  }
+  .cloud-content {
+    padding-top: 7vh;
+    padding-bottom: 7vh;
+    width: 45vw;
+    margin: auto;
+    text-align: left;
+  }
+  .cloud-content ol {
+    padding-left: 4vw;
+    margin-top: 3vw;
+  }
+  .cloud-content ol li {
+    font-size: 2.25vh;
+  }
 </style>
 <!-- BODY --> 
 <body>
@@ -195,25 +243,24 @@
     <div class="title">Benefits</div>
     <div class="content">
       <ol>
-        <li>Algorithmic logic designed by Prosthetists built to last</li>
-        <li>Completely Cloud based access via Browser solution:</li>
-        <!-- todo popout here -->
-        <!-- 
-          1. No CAD software to purchase, install, learn, etc. 
-          2. All CAD models are securely stored in Cloud for access by any device you have.
-          3. Replacement sockets can be generated from Stored files saving time
-          4. Database of Patient progress tracked over time (??)
-        -->
-        <li>Uses industry leading scanners for input - Only requires export .STL from your scanner software.</li>
-        <li>Cost savings in Prosthetist time and materials used to make</li>
+        <li><span class="vps">Socket designs optimized by Prosthetists built to last</span></li>
+        <li><span class="vps">Use industry standard scanners - just export .STL</span></li>
+        <li><span class="vps">Reduce time and labor costs of designing sockets</span></li>
       </ol>
     </div>
     <div class="cost-comparison">
-      <ul>
-        <li>Current "Plaster Mold Process" - ALL Manual<li>
-        <li>Current "Automated Milling" Process - 3D scan/CAD/Mill/Wrap/Finish<li>
-        <li>Cadicus Process - 3D Scan/CAD/Print/Finish<li>
-      </ul>
+      <div class="low-title">Cost Comparison</div>
+      <img src="cost-comparison.png">
+    </div>
+
+    <div class="cloud-content">
+      <div class="low-title">Built in the Cloud</div>
+      <!-- <li>Completely Cloud based access via Browser solution:</li> -->
+      <ol>
+        <li><span class="vps">No CAD software to install - Browser based web interface</span></li>
+        <li><span class="vps">All CAD models are securely stored in Cloud for access on any device</span></li>
+        <li><span class="vps">Replacement sockets can be generated from stored files saving time</span></li>
+      </ol>
     </div>
   </div>
 
