@@ -102,6 +102,14 @@
   .overview ul li {
     margin-top: 11vh;
   }
+  .overview .content {
+    margin-left: 20%;
+    margin-right: 20%;
+    text-align: left;
+  }
+  .overview .iframe {
+    margin-bottom: 50px;
+  }
   .panel {
     display: inline-block;
     width: 27vw;
@@ -204,89 +212,32 @@
 </style>
 <!-- BODY --> 
 <body>
-  <div class="tab landing">
-    <img src="work.png">
-    <div class="subtitle">Automated CAD design for 3D printing prosthetic sockets</div>
-    <div class="small_scroll">Scroll down for more information</div>
-  </div>
 
   <div class="tab overview">
-    <iframe class="iframe" height="350" width="600" src="https://www.youtube.com/embed/0KDYc4-w5Fg"> </iframe>
-    <div class="title">What is it?</div>
+    <div class="title">3D Scanner Input FAQ</div>
     <div class="content">
-      <ul>
-        <li>Make CAD files for 3D Printing Prosthetic Sockets</li>
-        <li>Automated design - No CAD experience necessary</li>
-        <li>Reduce Cost & Improve Consistency in the Cloud</li>
-      </ul>
-      <br><br><br><br>
-    </div>
-  </div>
+    
+      <br>
+      <h3>What types of scans work with Cadicus?</h3>
+      <p>STL (Stereolithographic data files .stl) scans of below-knee residual limbs.</p>
+    
+      <br>
+      <h3>Do all scans work?</h3>
+      <p>We prefer a manifold mesh if possible, but will do the best we can to clean up the mesh and make it manifold before processing.</p>
 
-  <div class="tab how-it-works">
-    <div class="title">How it works</div>
-    <div class="content">
+      <br>
+      <h3>What is a manifold mesh?</h3>
+      <p>Manifold is a mathematical term that means there are no duplicate or overlapping triangles or points in the mesh. The mesh exists as one single surface with no artifacts that would cause processing errors. <a href="https://en.wikipedia.org/wiki/Manifold">Link to wikipedia for manifold mesh.</a></p>
+        
+      <br>  
+      <h3>What types of tools can be used to process the mesh?</h3>
+      <p>Open-source software like <a href="https://meshmixer.com/">meshmixer</a> or <a href="https://www.blender.org/">blender</a> should be sufficient for cleaning up the mesh, but software that comes packaged with scanners may also offer this functionality.</p>
 
-      <div class="panel sidepanel">
-        <div class="paneltitle">3D Scan</div>
-        <img src="img1.png" class="panel_img" >
-        <ul>
-          <li>Using Industry Standard Scanners</li>
-          <li>Same process as scanning for fabricator</li>
-          <li>Create and Export .STL file</li>
-        </ul>
-      </div>
-      <div class="arrow blockarrow">
-        <span class="arrowtext">Upload .STL File</span>
-      </div>
-      <div class="panel midpanel">
-        <div class="paneltitle"><span class="cadicus-span">Cadicus</span> <br>Input Interface</div>
-        <img src="img2.png" class="panel_img" >
-        <ul>
-          <li>Cloud based Browser Interface - Nothing to Install</li>
-          <li>Algorithms by Prosthetists for Prosthetists</li>
-          <li>Pay per socket - No upfront investments</li>
-          <li>Durable socket designs</li>
-        </ul>
-      </div>
-      <div class="arrow blockarrow">
-        <span class="arrowtext">Export .STL File</span>
-      </div>
-      <div class="panel sidepanel">
-        <div class="paneltitle">3D Print</div>
-        <img src="img3.png" class="panel_img" >
-        <ul>
-          <li>Cost effective 3D printers</li>
-          <li>Manufacture in your office</li>
-          <li>or Upload to central fabricator</li>
-        </ul>
-      </div>
+      <br>
+      <h3>Is there an example to use?</h3>
+      <p>Youtube or google searches for "3d prosthetic socket design" often yield results for producing the residual limb scan, or check out the embedded video below.</p>
+      <iframe class="iframe" height="350" width="600" src="https://www.youtube.com/embed/WEOp8Bf2SUM"></iframe>
 
-    </div>
-  </div>
-
-  <div class="tab value-prop">
-    <div class="title">Benefits</div>
-    <div class="content">
-      <ol>
-        <li><span class="vps">Socket designs optimized by Prosthetists built to last</span></li>
-        <li><span class="vps">Use industry standard scanners - just export .STL</span></li>
-        <li><span class="vps">Reduce time and labor costs of designing sockets</span></li>
-      </ol>
-    </div>
-    <div class="cost-comparison">
-      <div class="low-title">Cost Comparison</div>
-      <img src="cost-comparison.png">
-    </div>
-
-    <div class="cloud-content">
-      <div class="low-title">Built in the Cloud</div>
-      <!-- <li>Completely Cloud based access via Browser solution:</li> -->
-      <ol>
-        <li><span class="vps">No CAD software to install - Browser based web interface</span></li>
-        <li><span class="vps">All CAD models are securely stored in Cloud for access on any device</span></li>
-        <li><span class="vps">Replacement sockets can be generated from stored files saving time</span></li>
-      </ol>
     </div>
   </div>
 
@@ -296,8 +247,6 @@
       We are currently beta testing our below-knee socket design software.
       <br><br>
       Open enrollment is available to all certified O&P professionals.
-      <br><br>
-      Please review the scanning input requirements here: <a href="/scanning.html">SCANNER INPUT FAQ</a>
       <br><br>
       Contact us if you'd like to trial the software or learning more.
     </div>
